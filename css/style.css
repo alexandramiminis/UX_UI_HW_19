@@ -1,8 +1,7 @@
+
 .inline-block {
   display: inline-block;
-  vertical-align: center;
   margin-left: 120px;
-  margin-top: 15px;
   padding-left: 15px;
   font-family: Roboto Mono;
   font-style: normal;
@@ -11,7 +10,6 @@
   line-height: 53px;
   }
   .logo {
-  display: inline-block;
   margin-left: 90px;
   margin-top: 48px;
   margin-bottom: 40px;
@@ -23,7 +21,6 @@
   }
   .ul {
   width: 50%;
-  margin-left: auto;
   }
 .title {
 position: absolute;
@@ -246,7 +243,9 @@ color: #000000;
   
 .prefootmessage {
   float:bottom;
-  position:relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
   padding:10px;
   height: 900px;
