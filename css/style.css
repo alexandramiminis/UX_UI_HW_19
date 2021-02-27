@@ -1,65 +1,86 @@
 
+
 .inline-block {
   display: inline-block;
-  margin-left: 120px;
+  margin-left: 100px;
   padding-left: 15px;
   font-family: Roboto Mono;
-  font-style: normal;
-  font-weight: normal;
+  font-style: lighter;
+  font-weight: lighter;
   font-size: 36px;
-  line-height: 53px;
   }
-  .logo {
+  .header {
   margin-left: 90px;
   margin-top: 48px;
   margin-bottom: 40px;
   padding: 1%;
   }
-  .nav {
-  width: 73%;
-  padding: 1%;
-  }
+ #logoanimate {
+  display:none;
+ }
+
+ ul {
+display: none;
+ }
+
   .ul {
-  width: 50%;
+margin-right: 50px;
   }
-.title {
-position: absolute;
-height: 267px;
-width: 100%;
-background: #4F4E4E;
+
+
+a:link, a:visited, a:hover, a:active { 
+color: black;
 }
-#head1 {
-margin-left: 400px;
+
+a:hover {
+text-decoration: none;
+background-color: #bdbdbd;
+color: white;
+}
+
+
+.jumbotron {
+position: absolute;
+height: 350px;
+width: 100%;
+background-color: #4F4E4E;
+}
+
+
+.head1 {
+margin-top: 0px;
+margin-left: auto;
 color: white;
 font-family: Roboto Mono;
 font-style: normal;
 font-weight: lighter;
-font-size: 32px;
+font-size: 34px;
 line-height: 42px;
 }
-#head2 {
+.head2 {
   text-align: center;
+  vertical-align: center;
   color: white;
   font-family: Roboto Mono;
-  font-style: normal;
+  font-style: lighter;
   font-weight: lighter;
-  font-size: 62px;
+  font-size: 46px;
   line-height: 42px;
 }
-#head3 {
+.head3 {
   text-align: right;
-  margin-right: 25%;
+  margin-right: 200px;
   color: white;
   font-family: Roboto Mono;
   font-style: normal;
   font-weight: lighter;
-  font-size: 32px;
+  font-size: 34px;
   line-height: 42px;
 }
 #portrait {
 display: flex;
 justify-content: center; 
-margin-top: 35px;
+margin-top: 100px;
 }
 .aboutme {
 display:flex;
@@ -81,6 +102,7 @@ color: #000000;
 }
 .hobbylayout {
   display: flex;
+  margin-top: 5px;
   justify-content: space-between;
 }
 .imagelineup {
@@ -98,13 +120,12 @@ color: #000000;
   .flexlink {
     display:inline-flex;
     margin-right: 40px;
-    margin-left: 775px;
+    margin-left: 800px;
     font-family: Roboto Mono;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 40px;
-    /* identical to box height */
     color: #000000;
   }
   .button {
@@ -140,27 +161,23 @@ color: #000000;
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 125px;
+   margin-top: 90px;
   }
   .workintro {
     display:flex;
-    margin-top: 50px;
-    height: 267px;
+    margin-top: 100px;
+    height: 300px;
     color: white;
     font-family: Roboto Mono;
-    font-style: normal;
+    font-style: lighter;
     background:#4F4E4E;
     width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+ 
 
-  #arrowbutton {
-  margin-top: 10px;
-  padding-top: 10px;
-  }
-  
   h3 {
     font-family: Roboto Mono;
     font-style: normal;
@@ -193,6 +210,8 @@ color: #000000;
     grid-row-end: line4;
     justify-self: center;
     align-self: center;
+    margin-right: 50px;
+    
    }
 
    .item3 {
@@ -211,6 +230,7 @@ color: #000000;
     grid-row-end: line5;
     justify-self: center;
     align-self: center;
+
    }
 
    .item5 {
@@ -230,7 +250,7 @@ color: #000000;
     grid-row-end: line5;
     justify-self: center;
     align-self: center;
-    margin-left: 130px;
+    margin-left: 100px;
    }
 
    .itemtext {
@@ -247,13 +267,18 @@ color: #000000;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  padding:10px;
-  height: 900px;
+  padding: 10px;
+  height: 750px;
   background: #4F4E4E;
 }
+
+.smilebubbleicon {
+padding: 5px;
+margin-top: 20px;
+}
+
 .inside{
   margin: auto;
-  width: 50%;
   padding: 10px;
   text-align: center;
   align-items: center;
@@ -298,14 +323,21 @@ color: #000000;
   
   color: #000000;
 }
-@media only screen and (max-width: 600){
+
+@media only screen and (max-width: 600px) {
+.navigation {
+display: none;
+}
+.logo {
+vertical-align: center;
+}
+body {
+width: 100%;
+}
+
 .workGrid {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr [line5] 1fr [line6] 1fr;
 } 
-body {
-display: flex;
-flex-direction: column;
-}
 }
